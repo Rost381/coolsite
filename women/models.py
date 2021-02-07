@@ -31,6 +31,7 @@ class Category(models.Model):
         return self.name
 
     def get_absolute_url(self):
+        # reverse пытается сразу построить нужный маршрут в момент создания класса
         return reverse('category', kwargs={'cat_slug': self.slug})
 
     class Meta:
