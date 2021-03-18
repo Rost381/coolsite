@@ -20,7 +20,7 @@ class Women(models.Model):
     class Meta:
         verbose_name = 'Известные женщины'
         verbose_name_plural = 'Известные женщины'
-        ordering = ['-time_create', 'title']
+        #ordering = ['-time_create', 'title']
 
 
 class Category(models.Model):
@@ -31,7 +31,6 @@ class Category(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        # reverse пытается сразу построить нужный маршрут в момент создания класса
         return reverse('category', kwargs={'cat_slug': self.slug})
 
     class Meta:

@@ -78,9 +78,6 @@ ul.list-articles li {
 .header {
 	background: #3F4137;
 	height: 60px;
-	width: 100%;
-	position: fixed;
-	top:0;
 }
 
 .logo {
@@ -97,8 +94,6 @@ ul.mainmenu {
 	color: #fdc073;
 	font-size: 20px;
 	overflow: hidden;
-
-
 }
 ul.mainmenu li {
 	float: left;
@@ -160,8 +155,6 @@ div.button {
 }
 
 .table-content {
-	margin-top: 60px;
-	/*margin-bottom: 30px; !* Add a bottom margin to avoid content overlay *!*/
 	width: 100%;
 	min-height: 100%;
 	height: 100%;
@@ -370,9 +363,6 @@ ul.lang-list li a:hover {color: #fdc073;}
 	font-family: Verdana, Geneva, Arial, Helvetica;
 	text-align: left;
 	overflow: hidden;
-	/*position: fixed; !* Set the navbar to fixed position *!*/
-    /*bottom: 0; !* Position the navbar at the bottom of the page *!*/
-    /*width: 100%; !* Full width *!*/
 }
 #footer a {
 	text-decoration: underline;

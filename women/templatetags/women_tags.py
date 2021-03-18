@@ -1,6 +1,4 @@
 from django import template
-from django.http import Http404
-
 from women.models import *
 
 register = template.Library()
@@ -20,13 +18,3 @@ def show_categories(sort=None, cat_selected=0):
         cats = Category.objects.order_by(sort)
 
     return {"cats": cats, "cat_selected": cat_selected}
-
-@register.simple_tag()
-def show_womens(cat_id=None):
-    if not cat_id:
-        return Women.objects.all()
-    else:
-        posts = Women.objects.filter(cat_id=cat_id)
-        if len(posts) == 0:
-            raise Http404()
-        return posts
